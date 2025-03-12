@@ -31,7 +31,7 @@ git add data/.gitignore data/cal.txt.dvc
 git commit -m "Add cal.txt.dvc"
 
 # set remote
-dvc remote add v01 -r user@192.168.1.29
+dvc remote add v01 -r ssh://user@192.168.1.11:/home/user/dvc-remote
 dvc remote modify v01 user user
 dvc remote modify v01 ask_password true
 
