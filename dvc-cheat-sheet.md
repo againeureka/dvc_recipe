@@ -38,8 +38,20 @@ dvc remote modify v01 ask_password true
 # push
 dvc push -r v01
 
+## 시각화
 
+- 참고 1 : https://dvc.org/doc/command-reference/dag
+- 참고 2 : https://dvc.org/doc/start/data-pipelines/data-pipelines
 
+```bash
+dvc dag
+dvc dag --mermaid
+dvc dag --outs
+
+dvc dag --md >> dag.md
+cml send-comment dag.md
+
+```
 
 
 
